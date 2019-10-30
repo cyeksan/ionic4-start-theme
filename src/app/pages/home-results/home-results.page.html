@@ -1,32 +1,39 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="transparent">
     <ion-buttons slot="start">
-      <ion-menu-button color="secondary"></ion-menu-button>
+      <ion-menu-button color="light"></ion-menu-button>
     </ion-buttons>
     <ion-title>
         <ion-text color="light">
-          <ion-text color="light" class="fw700">Ionic 4 Start</ion-text>
+          <ion-text color="light">Ana Sayfa</ion-text>
         </ion-text>
     </ion-title>
     <ion-buttons slot="end">
-      <ion-button size="small" shape="round" color="medium" (click)="notifications()">
+      <ion-button size="small" shape="round" color="light" (click)="notifications()">
         <ion-icon name="notifications"></ion-icon>
-        <ion-badge color="dark" slot="end">2</ion-badge>
+        <ion-badge color="tertiary" slot="end">2</ion-badge>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
-  <ion-toolbar color="dark">
-    <ion-searchbar [(ngModel)]="searchKey"></ion-searchbar>
+  <!--<ion-toolbar color="dark">
+    <ion-searchbar [(ngModel)]="searchKey" placeholder="Ara"></ion-searchbar>
     <ion-buttons slot="end">
-      <ion-button size="small" shape="round" color="medium" (click)="searchFilter()">
-        <ion-icon name="options"></ion-icon>
+      <ion-button size="small" shape="round" color="light" (click)="searchFilter()">
+        <ion-icon name="options" color="light"></ion-icon>
       </ion-button>
     </ion-buttons>
-  </ion-toolbar>
+  </ion-toolbar>-->
+  <ion-card class="card">
+    <div margin="16px">
+    <ion-card-subtitle>BAKİYE</ion-card-subtitle>
+    <ion-card-subtitle class="card-number">587-34897-2</ion-card-subtitle>
+    </div>
+    <ion-card-title>$12,500</ion-card-title>
+  </ion-card>
 </ion-header>
 
 <ion-content>
-  <ion-card no-margin class="no-radius">
+  <!--<ion-card no-margin class="no-radius">
     <ion-item lines="none" color="medium">
       <ion-label>
         <h2 no-margin class="fw500 no-margin">
@@ -54,7 +61,69 @@
   <ion-button margin shape="round" expand="full" color="secondary" (click)="searchFilter()">
     Modal 2: Search Filter
   </ion-button>
-  
+  -->
+  <!-- List of Text Items -->
+  <ion-list>
+    <ion-item class="green-border" no-lines>
+      <ion-col>
+        <ion-icon name="appstore" class="expense-list-icon" [style.color]="'#8B8D96'"></ion-icon>
+      </ion-col>
+      <ion-col size="7">
+      <ion-label color="dark">Yemek</ion-label>
+        <ion-text class="expense-list-item">Piton Arge ve Yazılım LTD.</ion-text>
+      </ion-col>
+      <ion-col text-center>
+        <ion-text class="expense-list-amount">$50</ion-text>
+      </ion-col>
+    </ion-item>
+    <ion-item class="green-border" no-lines>
+      <ion-col>
+        <ion-icon name="archive" class="expense-list-icon" [style.color]="'#8B8D96'"></ion-icon>
+      </ion-col>
+      <ion-col size="7">
+        <ion-label color="dark">Eğitim</ion-label>
+        <ion-text class="expense-list-item">Google</ion-text>
+      </ion-col>
+      <ion-col text-center>
+        <ion-text class="expense-list-amount">$500</ion-text>
+      </ion-col>
+    </ion-item>
+    <ion-item class="green-border" no-lines>
+      <ion-col>
+        <ion-icon name="basketball" class="expense-list-icon" [style.color]="'#8B8D96'"></ion-icon>
+      </ion-col>
+      <ion-col size="7">
+        <ion-label color="dark">Yemek</ion-label>
+        <ion-text class="expense-list-item">Burger King</ion-text>
+      </ion-col>
+      <ion-col text-center>
+        <ion-text class="expense-list-amount">$23</ion-text>
+      </ion-col>
+    </ion-item>
+    <ion-item class="green-border" no-lines>
+      <ion-col>
+        <ion-icon name="bowtie" class="expense-list-icon" [style.color]="'#8B8D96'"></ion-icon>
+      </ion-col>
+      <ion-col size="7">
+        <ion-label color="dark">Ulaşım</ion-label>
+        <ion-text class="expense-list-item">Vestel Beyaz Eşya A.Ş.</ion-text>
+      </ion-col>
+      <ion-col text-center>
+        <ion-text class="expense-list-amount">$150</ion-text>
+      </ion-col>
+    </ion-item>
+    <ion-item class="green-border" no-lines>
+      <ion-col>
+        <ion-icon name="bonfire" class="expense-list-icon" [style.color]="'#8B8D96'"></ion-icon>
+      </ion-col>
+      <ion-col size="7">
+        <ion-label color="dark">Giyim</ion-label>
+        <ion-text class="expense-list-item">Eaton Corp.</ion-text>
+      </ion-col>
+      <ion-col text-center>
+        <ion-text class="expense-list-amount">$340</ion-text>
+      </ion-col>
+    </ion-item>
+  </ion-list>
   <popmenu></popmenu>
 </ion-content>
-  

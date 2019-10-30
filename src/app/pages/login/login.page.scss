@@ -2,9 +2,14 @@
     ion-content {
         --background: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary));
     }
+
 }
 
 .paz {
     position: relative;
     z-index: 10;
+}
+
+ion-button{
+    --border-radius: 1px
 }

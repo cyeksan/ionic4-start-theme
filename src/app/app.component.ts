@@ -23,20 +23,20 @@ export class AppComponent {
   ) {
     this.appPages = [
       {
-        title: 'Home',
+        title: 'Ana Sayfa',
         url: '/home-results',
         direct: 'root',
         icon: 'home'
       },
       {
-        title: 'About',
+        title: 'Raporlar',
         url: '/about',
         direct: 'forward',
         icon: 'information-circle-outline'
       },
 
       {
-        title: 'App Settings',
+        title: 'Ayarlar',
         url: '/settings',
         direct: 'forward',
         icon: 'cog'

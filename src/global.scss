@@ -156,8 +156,9 @@ ion-item {
         height: 60px;
         margin: 20px auto 8px;
         border-radius: 10%;
-        background: url("/assets/img/ionic4start-ico.png") no-repeat;
+        //background: url("/assets/img/ionic4start-ico.png") no-repeat;
         background-size: 100%;
+        color: whitesmoke;
       }
   
       .list-form {
@@ -189,6 +190,11 @@ ion-item {
     }
   
   }
+
+  .login-btn {
+    text-align: center;
+    margin-top: 36px;
+  }
   
   // Custom Menu styles (overriding Shadow DOM)
   ion-menu {
@@ -207,3 +213,35 @@ ion-item {
       margin-bottom: -2px;
     }
   }
+
+  ion-button{
+    font-weight: bold;
+  }
+
+  .bg-transparent {
+    background: transparent;
+  }
+
+  .location {
+    font-weight: bold;
+  }
+
+  .expense-list-item{
+    font-size: small;
+    color: #444444;
+  }
+
+  .expense-list-amount{
+    text-align: center;
+    color: #8B8D96;
+    font-weight: bold;
+
+  }
+
+  .expense-list-icon{
+    width: 48px;
+    height: 48px;
+    background-size: 100%;
+    text-align: center;
+  }
+
